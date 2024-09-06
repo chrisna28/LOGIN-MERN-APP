@@ -1,0 +1,74 @@
+###
+GET http://localhost:5000/users/
+
+###
+GET http://localhost:5000/users/5c680b28-7bc0-4c02-9f74-e9800935a062
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+  "name": "User 1",
+  "email": "user1@gmail.com",
+  "password": "1234567",
+  "confirmPassword": "1234567",
+  "role": "user"
+}
+
+###
+PATCH http://localhost:5000/users/cce063bd-9039-4849-b1fe-dde5a2096b37
+Content-Type: application/json
+
+{
+  "name": "Cilly Mayori",
+  "email": "user@gmail.com",
+  "password": "1234567",
+  "confirmPassword": "1234567",
+  "role": "user"
+}
+
+###
+DELETE http://localhost:5000/users/bfb2f05e-67cc-47bb-ad3a-33cfa4da60df
+
+###
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+  "email": "user1@gmail.com",
+  "password": "1234567"
+}
+
+###
+GET http://localhost:5000/auth/me
+
+###
+DELETE  http://localhost:5000/auth/logout
+
+###
+GET http://localhost:5000/products
+
+###
+GET http://localhost:5000/products/9195245f-3ed8-4554-bbbf-3d4e316fade1
+
+###
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+  "name": "Produk 8",
+  "price": ""
+}
+
+###
+PATCH http://localhost:5000/products/a65b7881-7595-4abb-8a8b-19512c841eeb
+Content-Type: application/json
+
+{
+  "name": "PENGEN EEK",
+  "price": "123"
+}
+
+###
+DELETE http://localhost:5000/products/64ea0ef6-47d9-4b95-92a5-823865b21253
